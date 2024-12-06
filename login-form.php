@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form with Custom Validation Messages</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
@@ -28,17 +28,13 @@
     <div class="form-group">
         <label for="password">Password:</label>
         <div class="input-group">
-            <!-- Password validation with custom message -->
+            <!-- Password field without validation -->
             <input 
                 type="password" 
                 name="password" 
                 id="password" 
                 class="form-control" 
-                required 
-                pattern="(?=.*[A-Z])(?=.*\d)(?=.*[@]).{6,}" 
-                title="Password must be at least 6 characters long, contain a capital letter, a number, and @"
-                oninvalid="this.setCustomValidity('Password must have at least 6 characters, 1 uppercase letter, 1 number, and the @ symbol')" 
-                oninput="this.setCustomValidity('')"
+                required
             >
             <div class="input-group-append">
                 <span class="input-group-text" id="toggleLoginPassword">

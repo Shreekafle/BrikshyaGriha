@@ -15,8 +15,8 @@ if ($conn->connect_error) {
 
 // Admin credentials
 
-$admin_email = "admin@gmail.com"; // Replace with actual admin username
-$admin_password = "admin@123"; // Replace with actual admin password
+$admin_email = "Shree@gmail.com"; // Replace with actual admin username
+$admin_password = "Shree123"; // Replace with actual admin password
 
 // Hash the password
 $hashed_password = password_hash($admin_password, PASSWORD_BCRYPT);
